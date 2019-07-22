@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Observable, ConnectableObservable, Subject, of } from 'rxjs';
-import { publish, multicast, share, shareReplay, tap, withLatestFrom } from 'rxjs/operators';
+import { Observable, ConnectableObservable, Subject, of, interval, fromEvent } from 'rxjs';
+import { publish, multicast, share, shareReplay, tap, withLatestFrom, take, map, mergeMap, startWith, pairwise } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -389,10 +389,19 @@ export class AppComponent {
       ],
       correct: 0,
     },
+    {
+      title: 'RxJS Operators',
+      desc: `
+        RxJS offers 100+ operators for all kinds of use cases. The crucial ones are marked with a star in the official documentation.
+        <a href="https://www.learnrxjs.io/operators/">https://www.learnrxjs.io/operators/</a>
+      `,
+      correct: 0,
+    },
   ];
 
   writeConsole(...args: any[]) {
-    this.output += args.join(' ') + '<br>';
+    this.output += args.join(' ')
+      .replace(/ /g, '&nbsp;') + '<br>';
     console.log.apply(null, args);
   }
 }
