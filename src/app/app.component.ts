@@ -20,7 +20,7 @@ export class AppComponent {
         <a href="http://introtorx.com/Content/v1.0.10621.0/09_SideEffects.html">http://introtorx.com/Content/v1.0.10621.0/09_SideEffects.html</a>
         <cite>Eliminating side effects, that is, changes in state that do not depend on the function inputs, can make understanding a program easier, which is one of the key motivations for the development of functional programming.</cite>
         <a href="https://en.wikipedia.org/wiki/Functional_programming">https://en.wikipedia.org/wiki/Functional_programming</a>
-        <br><br>Which of these JavaScript functions would be considered a side effect?
+        <br><br>Which of these JavaScript functions has side effects?
       `,
       answers: [
         `(a, b) => a + b`,

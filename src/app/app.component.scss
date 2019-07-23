@@ -1,13 +1,17 @@
 :host {
   display: block;
   width: 720px;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 32px auto;
+  padding: 0 16px;
   h1 {
     font-size: 16px;
     color: rgba(0,0,0,.6);
   }
   .card {
     margin-bottom: 16px;
+    font-size: 16px;
     ::ng-deep cite {
       background-color: #f7f7f7;
       display: block;
