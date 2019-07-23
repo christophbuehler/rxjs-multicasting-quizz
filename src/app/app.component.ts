@@ -43,7 +43,7 @@ export class AppComponent {
         `most programming languages enforce the functional paradigm`,
         `execution order of the code is not that critical`,
       ],
-      correct: 4,
+      correct: 2,
     },
     {
       title: 'What is multicasting?',
