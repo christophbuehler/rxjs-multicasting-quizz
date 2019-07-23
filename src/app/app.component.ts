@@ -40,10 +40,10 @@ export class AppComponent {
       answers: [
         `testing gets easier`,
         `problems can be split into smaller sub problems (divide et impera)`,
-        `debugging gets easier`,
         `most programming languages enforce the functional paradigm`,
+        `execution order of the code is not that critical`,
       ],
-      correct: 3,
+      correct: 4,
     },
     {
       title: 'What is multicasting?',
